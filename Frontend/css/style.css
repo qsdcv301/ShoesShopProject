@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    height: 100%;
+}
+
+.first-row {
+    height: 100%; /* 첫 번째 행의 높이를 100%로 설정 */
+}
+
+.product-menu {
+    height: 100%;
+    background-color: #eee;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.product-item {
+    text-align: center;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.product-item img {
+    max-height: 200px; /*이미지의 높이임*/
+    width: 100%;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
