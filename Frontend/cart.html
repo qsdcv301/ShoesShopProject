@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/mainpage.js"></script>
 </head>
+
 <body>
+    <footer class="container-fluid">
+        <div class="container-fluid bg-dark">
+            <div class="copyright text-center pt-5 pb-2">
+                <div class="footer-subnav pb-5">
+                    <a href="#" class="text-white text-decoration-none">쿠키 설정</a>
+                    <span class="px-3 text-white">ㅣ</span>
+                    <a href="#" class="text-white text-decoration-none">구매 이용약관</a>
+                    <span class="px-3 text-white">ㅣ</span>
+                    <a href="#" class="text-white text-decoration-none">개인정보 처리방침</a>
+                    <span class="px-3 text-white">ㅣ</span>
+                    <a href="#" class="text-white text-decoration-none">아디클럽 이용약관</a>
+                    <span class="px-3 text-white">ㅣ</span>
+                    <a href="#" class="text-white text-decoration-none">사업자정보확인</a>
+                    <span class="px-3 text-white">ㅣ</span>
+                    <a href="#" class="text-white text-decoration-none">공정거래 자율준수</a>
+                    <span class="px-3 text-white">ㅣ</span>
+                    <a href="#" class="text-white text-decoration-none">채무지급보증안내</a>
+                </div>
+                <p class="text-white">&copy; adidas Korea, LLC. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
     <div class="container">
         <div class="row">
-            
+            <div class="col-7">
+                <div class="products">
+                    <div class="card-columns">
+                        <div class="card">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5" style="height: 3000px;">
+                <div class="orders position-fixed">
+                    <h1 class="pt-5">주문상품 요약</h1>
+                    <div class="card">
+                        <ul class="order-ul list-unstyled p-5">
+                            <li>
+                                <p>선택한 모든 상품가격<span class="float-right">원</span></p>
+                            </li>
+                            <li>
+                                <p>원래가격<span class="float-right">원</span></p>
+                            </li>
+                            <li>
+                                <p>배송비<span class="float-right">원</span></p>
+                                <p class="pl-5">50,000원 이상 배송비 무료 기본 3,000원</p>
+                            </li>
+                            <li>
+                                <p>할인<span class="float-right">원</span></p>
+                            </li>
+                            <li>
+                                <p>합계<span class="float-right">원</span></p>
+                            </li>
+                            <li class="mt-5"><button class="btn btn-primary btn-block">구매하기</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
