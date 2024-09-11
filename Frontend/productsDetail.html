@@ -125,6 +125,15 @@
             display: flex;
             justify-content: space-around;
         }
+
+        .s-img img {
+            max-width: 98.5px;
+            cursor: pointer;
+            border: 1px solid #000;
+            box-sizing: content-box;
+            display: block;
+            margin-bottom: 2px;
+        }
     </style>
 </head>
 
@@ -208,10 +217,21 @@
     <body>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-6">
-                    <img src="" alt="">
+                <div class="col-7">
+                    <div class="img-box d-flex">
+                        <div class="s-img">
+                            <img src="images/pd/001.jpg" alt="001" class="simg">
+                            <img src="images/pd/002.jpg" alt="001" class="simg">
+                            <img src="images/pd/003.jpg" alt="001" class="simg">
+                            <img src="images/pd/004.jpg" alt="001" class="simg">
+                            <img src="images/pd/005.jpg" alt="001" class="simg">
+                        </div>
+                        <div class="b-img ml-2">
+                            <img src="images/pd/001.jpg" alt="001">
+                        </div>
+                    </div>
                 </div>
-                <div class="offset-1 col-5">
+                <div class="col-5">
                     <div class="card">
                         <div class="card-header">
                             <p>상품소개1</p>
@@ -266,7 +286,66 @@
                 </div>
             </div>
         </div>
-        </div>
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <ul class="col-12 footer-nav d-flex p-5 justify-content-center">
+                        <li class="col-2 d-flex flex-column">
+                            <h5>Brand</h5>
+                            <a href="#" class="text-body">아이다스</a>
+                            <a href="#" class="text-body">나이키</a>
+                            <a href="#" class="text-body">뉴발란스</a>
+                            <a href="#" class="text-body">캔버스</a>
+                        </li>
+                        <li class="col-2 d-flex flex-column">
+                            <h5>Developer</h5>
+                            <a href="#" class="text-body">개발자1</a>
+                            <a href="#" class="text-body">개발자2</a>
+                            <a href="#" class="text-body">개발자3</a>
+                            <a href="#" class="text-body">개발자4</a>
+                            <a href="#" class="text-body">개발자5</a>
+                        </li>
+                        <li class="col-2 d-flex flex-column">
+                            <h5>SUPPORT</h5>
+                            <a href="#" class="text-body">고객센터</a>
+                            <a href="#" class="text-body">회원가입</a>
+                            <a href="#" class="text-body">주문 / 배송 조회</a>
+                            <a href="#" class="text-body">많이 하시는 질문</a>
+                            <a href="#" class="text-body">구매 이용약관</a>
+                        </li>
+                        <li class="col-2 d-flex flex-column">
+                            <img src="" alt="facebook">
+                            <img src="" alt="instagram">
+                            <img src="" alt="twitter">
+                            <img src="" alt="ticktok">
+                            <img src="" alt="youtube">
+                        </li>
+                    </ul>
+                    <p>내용1 | 내용2 | 내용3 | 내용4 |
+                        내용5 | 내용6 | 내용7 | 내용8 | 내용9</p>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark">
+                <div class="copyright text-center pt-5 pb-2">
+                    <div class="footer-subnav pb-5">
+                        <a href="#" class="text-white text-decoration-none">서브메뉴1</a>
+                        <span class="px-3 text-white">ㅣ</span>
+                        <a href="#" class="text-white text-decoration-none">서브메뉴2</a>
+                        <span class="px-3 text-white">ㅣ</span>
+                        <a href="#" class="text-white text-decoration-none">서브메뉴3</a>
+                        <span class="px-3 text-white">ㅣ</span>
+                        <a href="#" class="text-white text-decoration-none">서브메뉴4</a>
+                        <span class="px-3 text-white">ㅣ</span>
+                        <a href="#" class="text-white text-decoration-none">서브메뉴5</a>
+                        <span class="px-3 text-white">ㅣ</span>
+                        <a href="#" class="text-white text-decoration-none">서브메뉴6</a>
+                        <span class="px-3 text-white">ㅣ</span>
+                        <a href="#" class="text-white text-decoration-none">서브메뉴7</a>
+                    </div>
+                    <p class="text-white">&copy; Ezen Team Project, LLC. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
     </body>
 
 </html>
