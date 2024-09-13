@@ -14,6 +14,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/mainpage.js"></script>
+    <script src="js/script.js"></script>
 
     <style>
         a {
@@ -112,7 +113,9 @@
         .header-menu {
             background-color: #ddd;
             height: 500px;
-            display: none
+            display: none;
+            z-index: 999;
+            
         }
 
         .btn {
@@ -133,8 +136,6 @@
 <body>
     <header>
         <div class="notice-container">
-            <span>공지사항</span>
-            <i class="bi bi-chevron-down ml-2"></i>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
@@ -149,19 +150,19 @@
                 <div class="collapse navbar-collapse col-6 position-relative">
                     <ul class="navbar-nav mb-2 mb-lg-0 position-absolute">
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Poplular</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Men</a>
+                            <a class="nav-link font-weight-bold" href="#">Nike</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Women</a>
+                            <a class="nav-link font-weight-bold" href="#">Adidas</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Brands</a>
+                            <a class="nav-link font-weight-bold" href="#">NewBalance</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Sports</a>
+                            <a class="nav-link font-weight-bold" href="#">ETC</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
                             <a class="nav-link" href="#">Sale</a>
@@ -204,31 +205,13 @@
                 </div>
             </div>
         </nav>
-        <div class="header-menu"></div>
+        <div class="header-menu">
+
+        </div>
     </header>
 
 
 
-    <script>
-        $(document).ready(function () {
-            $('.navbar-nav').hover(
-                function () {
-                    $('.header-menu').stop().slideDown();
-                },
-                function () {
-                    $('.header-menu').stop().slideUp();
-                }
-            );
-
-            $('.header-menu').hover(
-                function () {
-                    $(this).stop().slideDown();
-                },
-                function () {
-                    $(this).stop().slideUp();
-                }
-            );
-        });
-    </script>
+    
 
 </html>
