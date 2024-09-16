@@ -13,6 +13,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/mainpage.js"></script>
+    <script src="js/script.js"></script>
 
     <style>
         a {
@@ -111,7 +112,9 @@
         .header-menu {
             background-color: #ddd;
             height: 500px;
-            display: none
+            display: none;
+            z-index: 999;
+
         }
 
         .btn {
@@ -132,8 +135,6 @@
 <body>
     <header>
         <div class="notice-container">
-            <span>공지사항</span>
-            <i class="bi bi-chevron-down ml-2"></i>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
@@ -148,19 +149,19 @@
                 <div class="collapse navbar-collapse col-6 position-relative">
                     <ul class="navbar-nav mb-2 mb-lg-0 position-absolute">
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Poplular</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Men</a>
+                            <a class="nav-link font-weight-bold" href="#">Nike</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Women</a>
+                            <a class="nav-link font-weight-bold" href="#">Adidas</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Brands</a>
+                            <a class="nav-link font-weight-bold" href="#">NewBalance</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
-                            <a class="nav-link" href="#">Sports</a>
+                            <a class="nav-link font-weight-bold" href="#">ETC</a>
                         </li>
                         <li class="nav-item ml-auto mr-auto">
                             <a class="nav-link" href="#">Sale</a>
@@ -203,20 +204,29 @@
                 </div>
             </div>
         </nav>
-        <div class="header-menu"></div>
+        <div class="header-menu">
+
+        </div>
     </header>
     <div class="container">
         <div class="row">
             <div class="col-7">
-                <div class="products">
+                <div class="cart-option col-12 py-3 d-flex justify-content-between align-items-center">
+                    <input type="checkbox">
+                    <label for="selectCheck" class="ml-3 mb-0 w-75">전체 선택</label>
+                    <button class="btn btn-danger">선택 삭제</button>
+                </div>
+                <!-- 상품추가 되는곳 -->
+                <div class="products col-12">
                     <div class="d-flex flex-column">
-                        <div class="d-flex flex-row p-5 align-items-center flex-wrap">
+                        <div class="d-flex flex-row p-3 align-items-center flex-wrap card">
                             <input type="checkbox">
-                            <label for="selectCheck" class="ml-3 w-75">체크박스</label>
+                            <label for="selectCheck" class="ml-3 mb-0 w-75">체크박스</label>
                             <div class="card w-50">
-                                <img src="" alt="productImages-01">
+                                <img src="shoes_images/men/newyork/images/blue/newyork_blue_standard01.avif"
+                                    alt="productImages-01">
                             </div>
-                            <div class="card w-50">
+                            <div class="pl-5 w-50">
                                 <p>브랜드</p>
                                 <p>상품명</p>
                                 <p>사이즈</p>
@@ -226,10 +236,49 @@
                         </div>
                     </div>
                 </div>
+                <div class="products col-12">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row p-3 mt-5 align-items-center flex-wrap card">
+                            <input type="checkbox">
+                            <label for="selectCheck" class="ml-3 mb-0 w-75">체크박스</label>
+                            <div class="card w-50">
+                                <img src="shoes_images/men/newyork/images/blue/newyork_blue_standard01.avif"
+                                    alt="productImages-01">
+                            </div>
+                            <div class="pl-5 w-50">
+                                <p>브랜드</p>
+                                <p>상품명</p>
+                                <p>사이즈</p>
+                                <p>수량</p>
+                                <button class="btn btn-info">옵션 변경</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products col-12">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row p-3 mt-5 align-items-center flex-wrap card">
+                            <input type="checkbox">
+                            <label for="selectCheck" class="ml-3 mb-0 w-75">체크박스</label>
+                            <div class="card w-50">
+                                <img src="shoes_images/men/newyork/images/blue/newyork_blue_standard01.avif"
+                                    alt="productImages-01">
+                            </div>
+                            <div class="pl-5 w-50">
+                                <p>브랜드</p>
+                                <p>상품명</p>
+                                <p>사이즈</p>
+                                <p>수량</p>
+                                <button class="btn btn-info">옵션 변경</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 상품추가 되는곳 -->
             </div>
-            <div class="col-5" style="height: 3000px;">
+            <div class="col-5">
                 <div class="orders">
-                    <h1 class="pt-5">주문상품 요약</h1>
+                    <h1 class="pt-4">주문상품 요약</h1>
                     <div class="card">
                         <ul class="order-ul list-unstyled p-5">
                             <li>
@@ -255,7 +304,7 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid">
+    <footer class="container-fluid mt-5">
         <div class="container-fluid bg-dark">
             <div class="copyright text-center pt-5 pb-2">
                 <div class="footer-subnav pb-5">
