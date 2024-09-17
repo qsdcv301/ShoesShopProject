@@ -109,15 +109,6 @@
             border-bottom-right-radius: 0;
         }
 
-        /*헤더 메뉴*/
-        .header-menu {
-            background-color: #ddd;
-            height: 500px;
-            display: none;
-            z-index: 999;
-            
-        }
-
         .btn {
             border: 1px solid #ccc;
         }
@@ -129,6 +120,11 @@
         .user-menu {
             display: flex;
             justify-content: space-around;
+
+            .header-menu {
+                display: none;
+                z-index: 999;
+            }
         }
     </style>
 </head>
@@ -149,22 +145,22 @@
                 <!-- 내비게이션 -->
                 <div class="collapse navbar-collapse col-6 position-relative">
                     <ul class="navbar-nav mb-2 mb-lg-0 position-absolute">
-                        <li class="nav-item ml-auto mr-auto">
+                        <li class="nav-item mx-auto">
                             <a class="nav-link" href="#">Poplular</a>
                         </li>
-                        <li class="nav-item ml-auto mr-auto">
+                        <li class="nav-item mx-auto">
                             <a class="nav-link font-weight-bold" href="#">Nike</a>
                         </li>
-                        <li class="nav-item ml-auto mr-auto">
+                        <li class="nav-item mx-auto">
                             <a class="nav-link font-weight-bold" href="#">Adidas</a>
                         </li>
-                        <li class="nav-item ml-auto mr-auto">
+                        <li class="nav-item mx-auto">
                             <a class="nav-link font-weight-bold" href="#">NewBalance</a>
                         </li>
-                        <li class="nav-item ml-auto mr-auto">
+                        <li class="nav-item mx-auto">
                             <a class="nav-link font-weight-bold" href="#">ETC</a>
                         </li>
-                        <li class="nav-item ml-auto mr-auto">
+                        <li class="nav-item mx-auto">
                             <a class="nav-link" href="#">Sale</a>
                         </li>
                     </ul>
@@ -206,12 +202,45 @@
             </div>
         </nav>
         <div class="header-menu">
-
+            <div class="header-list d-flex p-3">
+                <div class="list-group list-group-flush offset-2 col-2">
+                    <a href="#" class="list-group-item list-group-item-action py-5">Lifestyle</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 4</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 5</a>
+                </div>
+                <div class="list-group list-group-flush col-2">
+                    <a href="#" class="list-group-item list-group-item-action py-5">Running</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 4</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 5</a>
+                </div>
+                <div class="list-group list-group-flush col-2">
+                    <a href="#" class="list-group-item list-group-item-action py-5">Activity</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 4</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 5</a>
+                </div>
+                <div class="list-group list-group-flush col-2">
+                    <a href="#" class="list-group-item list-group-item-action py-5">ETC</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 4</a>
+                    <a href="#" class="list-group-item list-group-item-action">시리즈 5</a>
+                </div>
+            </div>
         </div>
     </header>
 
 
 
-    
+
 
 </html>
